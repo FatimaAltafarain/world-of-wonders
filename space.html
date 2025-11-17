@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Exploration | Science Dome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+
+  <header>
+    <h1 class="logo">🌍 World of Wonders</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="wonders.html">Wonders</a>
+      <a href="science.html">Science Dome</a>
+      <a href="space.html" class="active">Space Exploration</a>
+    </nav>
+  </header>
+
+
+  <style>
+    body {background: radial-gradient(circle at center, #010012, #02001a, #060021);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      overflow-x: hidden;}
+
+    header { padding: 20px;}
+
+    h1.logo { color: #00ffff;
+      text-shadow: 0 0 20px #00ffff;}
+
+    h2 { margin-top: 50px;
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 0 0 25px #00eaff;}
+
+    .explore-boxes {display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 80px auto;
+      width: 90%;
+      max-width: 1000px;}
+
+    .box { background: rgba(255,255,255,0.08);
+      border-radius: 25px;
+      padding: 40px 30px;
+      width: 260px;
+      box-shadow: 0 0 25px rgba(0,255,255,0.3);
+      backdrop-filter: blur(10px);
+      transition: all 0.4s ease;
+      cursor: pointer;}
+
+    .box:hover {transform: scale(1.07);
+      box-shadow: 0 0 40px #00ffff, 0 0 60px #a64dff;}
+
+    .box h3 {color: #00ffff;
+      margin-bottom: 10px;}
+
+    .box p {color: #ccc;
+      font-size: 0.95em;
+      line-height: 1.5; }
+
+    .glow-button {display: inline-block;
+      margin: 40px 0;
+      padding: 14px 30px;
+      color: #fff;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #00eaff, #a64dff);
+      box-shadow: 0 0 25px #00ffff;
+      text-decoration: none;
+      transition: 0.3s; }
+
+    .glow-button:hover { box-shadow: 0 0 40px #00ffff, 0 0 60px #a64dff;
+      transform: scale(1.05);}
+  </style>
+</head>
+<body>
+
+
+
+  <h2>🚀 Space Exploration</h2>
+  <p>Discover the great cosmic journey, from galaxies to the future of space travel.</p>
+<a href="universe.html">
+  <div class="explore-boxes">
+    <div class="box" onclick="openPage('universe.html')">
+      <h3>🌌 Endless Universe</h3>
+      <p>Step into the infinite cosmos filled with stars, galaxies, and cosmic mysteries.</p>
+    </div></a>
+
+    <div class="box" onclick="openPage('planets.html')">
+      <h3>🪐 Exploring Planets</h3>
+      <p>Travel across our Solar System "Mercury to Neptune" each planet a unique world.</p>
+    </div>
+
+    <div class="box" onclick="openPage('future.html')">
+      <h3>🚀 Future of Space</h3>
+      <p>Experience the coming era of interstellar travel, colonies, and new life beyond Earth.</p>
+    </div>
+  </div>
+
+  <a href="science.html" class="glow-button">← Back to Science Dome</a>
+
+  <footer>© 2025 World of Wonders | Space Exploration</footer>
+
+  <script>
+    function openPage(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>
+
+
+</body>
+</html>

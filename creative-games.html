@@ -1,0 +1,139 @@
+<!-- creative-games.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Games | Game Arena</title>
+
+<style>
+:root {
+  --bg1: #01010a;
+  --bg2: #000018;
+  --accent1: #ffdd00;
+  --accent2: #ff5500;
+  --glass: rgba(255,255,255,0.05);
+  --radius: 20px;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body { font-family:'Poppins',sans-serif;
+  background: radial-gradient(circle at 25% 25%, var(--bg1), var(--bg2) 85%);
+  color:#fff;
+  min-height:100vh;
+  overflow-x:hidden;}
+
+header { text-align:center;
+  padding:60px 20px 20px;}
+
+header h1 { font-size:2.5rem;
+  color: var(--accent1);
+  text-shadow:0 0 25px rgba(255,221,0,0.3);}
+
+header p {font-size:1.1rem;
+  max-width:800px;
+  margin:10px auto;
+  color:#bbb;}
+
+section { max-width:1000px;
+  margin:60px auto;
+  padding:0 20px;}
+
+section h2 {color: var(--accent2);
+  font-size:1.8rem;
+  text-align:center;
+  margin-bottom: 30px;
+  text-shadow:0 0 10px rgba(255,85,0,0.2);}
+
+.info-grid { display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;}
+
+.info-card { background: var(--glass);
+  border-radius: var(--radius);
+  padding:20px;
+  box-shadow:0 6px 30px rgba(0,0,0,0.5);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display:flex;
+  flex-direction:column;}
+
+.info-card:hover { transform: translateY(-6px);
+  box-shadow:0 0 50px rgba(255,221,0,0.25);}
+
+.info-card img { width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:15px;}
+
+.info-card h3 {color: var(--accent1);
+  margin-bottom:8px;
+  font-size:1.2rem;}
+
+.info-card p {margin:0;
+  color:#e8e8e8;
+  font-size:0.98rem;
+  flex-grow:1;}
+
+.glow-btn { margin-top:15px;
+  align-self:center;
+  text-decoration:none;
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  color: #000;
+  padding: 10px 26px;
+  border-radius:30px;
+  font-weight:600;
+  transition:0.3s ease;
+  box-shadow:0 0 25px rgba(255,221,0,0.2);}
+
+.glow-btn:hover { transform: scale(1.05);
+  box-shadow:0 0 40px rgba(255,221,0,0.35);}
+
+footer { text-align:center;
+  color:#999;
+  padding:50px 20px 80px;
+  font-size:0.9rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎮 Creative Games</h1>
+  <p>Enter a world of unique interactive games that challenge creativity, problem-solving, and imagination. Play, learn, and explore!</p>
+</header>
+
+<section>
+  <h2>Unique Interactive Games</h2>
+  <div class="info-grid">
+    <div class="info-card">
+      <img src="https://th.bing.com/th?id=OIF.xLGxBopQ2nigTr2b%2fkx15Q&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Puzzle Adventure">
+      <h3>Puzzle Adventure</h3>
+      <p>Challenge your mind with immersive puzzles and quests. Solve mysteries, unlock levels, and explore hidden worlds using logic and creativity.</p>
+      <a href="https://poki.com/en/puzzle?msockid=1dc96e32985d62e9346e784b9c5d6cde" target="_blank" class="glow-btn">Play Now</a>
+    </div>
+
+    <div class="info-card">
+      <img src="https://external-preview.redd.it/W0M-0x0M41-aQEseGOkbAUnOORT1eqkkT-PuoRGT0fQ.jpg?auto=webp&s=0b663c8cfc9237661f58a4b9f07cdb4b5058f7cb" alt="Creative Sandbox">
+      <h3>Creative Sandbox</h3>
+      <p>Design your own worlds with unlimited tools. Build structures, craft stories, and create interactive experiences while experimenting freely.</p>
+      <a href=https://www.eveonline.com/ target="_blank" class="glow-btn">Play Now</a>
+    </div>
+
+    <div class="info-card">
+      <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&q=80" alt="Strategy Challenge">
+      <h3>Strategy Challenge</h3>
+      <p>Test your planning and decision-making. Manage resources, lead virtual teams, and overcome challenges to achieve victory in dynamic game scenarios.</p>
+      <a href="strategy challenge.html" target="_blank" class="glow-btn">Play Now</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 World of Wonders | Creative Games
+</footer>
+
+</body>
+</html>

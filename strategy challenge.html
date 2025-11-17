@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategy Challenge | World of Wonders</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root { --bg: radial-gradient(circle at 20% 20%, #00040a, #000000 90%);
+  --accent1: #00ffe0;
+  --accent2: #ff7ae6;
+  --text-light: #f5f5f5;}
+
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body {font-family:'Poppins',sans-serif;
+  background: var(--bg);
+  color: var(--text-light);
+  overflow-x:hidden;
+  line-height:1.6;}
+
+header { text-align:center;
+  padding:100px 20px 60px;}
+
+header h1 { font-size:3rem;
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  -webkit-backgroundclip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:0 0 20px rgba(0,255,224,0.5);
+  animation: glow 6s infinite alternate;}
+
+@keyframes glow { 0% { text-shadow: 0 0 10px var(--accent1), 0 0 20px var(--accent2);}
+  100% { text-shadow: 0 0 30px var(--accent1), 0 0 60px var(--accent2);}}
+
+header p { font-size:1.2rem;
+  max-width:800px;
+  margin:20px auto 0;
+  color:#d8d8d8;}
+
+.section { max-width:1100px;
+  margin:60px auto;
+  padding:0 20px;}
+
+.cards { display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;}
+
+.card {background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:25px;
+  width:320px;
+  padding:25px;
+  box-shadow:0 0 25px rgba(0,255,224,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+.card:hover { transform: translateY(-10px) scale(1.03);
+  box-shadow:0 0 45px rgba(0,255,224,0.25);}
+
+.card h2 { color: var(--accent1);
+  font-size:1.5rem;
+  margin-bottom:15px;
+  text-shadow:0 0 15px rgba(0,255,224,0.4);}
+
+.card p {color:#e8e8e8;
+  font-size:1rem;
+  margin-bottom:15px;
+  text-align:justify;}
+
+.card img { width:100%;
+  border-radius:15px;
+  margin-bottom:15px;
+  box-shadow:0 0 20px rgba(0,255,224,0.15);
+  transition: transform 6s ease;}
+
+.card img:hover {transform: scale(1.1);}
+
+/* Tip Box */
+.tip {background: rgba(0,255,224,0.05);
+  border:1px solid rgba(0,255,224,0.2);
+  border-radius:15px;
+  padding:15px;
+  margin-top:10px;
+  display:none;
+  font-size:0.95rem;
+  color:#c8fff6;
+  text-align:justify;}
+
+.tip-btn { background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  color:#000;
+  font-weight:600;
+  border:none;
+  border-radius:10px;
+  padding:8px 12px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+  font-size:0.9rem;}
+
+.tip-btn:hover {transform: scale(1.05);
+  box-shadow:0 0 15px rgba(0,255,224,0.4);}
+
+footer {text-align:center;
+  padding:60px 20px;
+  color:#bbb;
+  font-size:0.9rem;
+  border-top:1px solid rgba(255,255,255,0.1);}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Strategy Challenges</h1>
+  <p>Sharpen your mind with the most interesting, creative, and challenging strategy games.  
+  Click the "Show Tip" button on each card to reveal secret strategies!</p>
+</header>
+
+<div class="section">
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=800&q=80" alt="Maze Challenge">
+      <h2>🌀 Maze Mastery</h2>
+      <p>Dive into intricate mazes and plan your moves carefully. Can you reach the center faster than others?</p>
+      <button class="tip-btn" onclick="toggleTip(this)">Show Tip</button>
+      <div class="tip">
+        Always start by mapping the outer edges first. Look for repeated patterns in turns to predict shortcuts!
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.Fe4A5Oy7TfVksKrKEj9a_AHaEK?w=317&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Tower Defense">
+       <h2>🛡 Tower Defense Tactics</h2>
+      <p>Build defenses to protect your kingdom from waves of enemies.</p>
+      <button class="tip-btn" onclick="toggleTip(this)">Show Tip</button>
+      <div class="tip">
+        Place slower towers near the start, and high-damage towers near choke points. Upgrade strategically based on wave type.
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=800&q=80" alt="Chess Puzzle">
+      <h2>♟ Chess Strategy</h2>
+      <p>Test your mind with classic and creative chess puzzles.</p>
+      <button class="tip-btn" onclick="toggleTip(this)">Show Tip</button>
+      <div class="tip">
+        Always visualize your opponent's next move. Look for forced captures and control the center for long-term advantage.
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?auto=format&fit=crop&w=800&q=80" alt="Resource Management">
+      <h2>💡 Resource Management</h2>
+      <p>Manage limited resources wisely to achieve your goals.</p>
+      <button class="tip-btn" onclick="toggleTip(this)">Show Tip</button>
+      <div class="tip">
+        Prioritize long-term investments over quick gains. Balance growth and defense carefully to prevent collapses.
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.RUQ1mGRCueRoWX0KpoiodwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Puzzle Adventure">
+      <h2>🧩 Puzzle Adventure</h2>
+      <p>Engage in multi-level puzzle challenges with increasing difficulty.</p>
+      <button class="tip-btn" onclick="toggleTip(this)">Show Tip</button>
+      <div class="tip">
+        Start from the easiest clue and gradually connect dots. Sometimes the simplest observation opens hidden paths.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2025 World of Wonders | Strategy Challenges
+</footer>
+
+<script>
+function toggleTip(button) {
+  const tipBox = button.nextElementSibling;
+  if(tipBox.style.display === "block") {
+    tipBox.style.display = "none";
+    button.textContent = "Show Tip";
+  } else {
+    tipBox.style.display = "block";
+    button.textContent = "Hide Tip";
+  }
+}
+</script>
+
+</body>
+</html>

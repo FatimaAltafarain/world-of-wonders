@@ -1,0 +1,153 @@
+<!-- adventure-film.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Adventure Film | Game Arena</title>
+
+<style>
+:root {--bg1: #01010a;
+  --bg2: #000018;
+  --accent1: #ff5500;
+  --accent2: #ffdd00;
+  --glass: rgba(255,255,255,0.05);
+  --radius: 20px;}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {font-family:'Poppins',sans-serif;
+  background: radial-gradient(circle at 25% 25%, var(--bg1), var(--bg2) 85%);
+  color:#fff;
+  min-height:100vh;
+  overflow-x:hidden;}
+
+header { text-align:center;
+  padding:60px 20px 20px;}
+
+header h1 { font-size:2.5rem;
+  color: var(--accent1);
+  text-shadow:0 0 25px rgba(255,85,0,0.3);}
+
+header p { font-size:1.1rem;
+  max-width:800px;
+  margin:10px auto;
+  color:#bbb;}
+
+section { max-width:1000px;
+  margin:60px auto;
+  padding:0 20px;}
+
+section h2 { color: var(--accent2);
+  font-size:1.8rem;
+  text-align:center;
+  margin-bottom: 20px;
+  text-shadow:0 0 10px rgba(255,221,0,0.2);}
+
+section p {color:#ddd;
+  font-size:1.05rem;
+  line-height:1.6;
+  text-align:justify;
+  margin-bottom:40px;}
+
+.info-grid {
+display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;}
+
+.info-card { background: var(--glass);
+  border-radius: var(--radius);
+  padding:20px;
+  box-shadow:0 6px 30px rgba(0,0,0,0.5);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+.info-card:hover {transform: translateY(-6px);
+  box-shadow:0 0 50px rgba(255,221,0,0.25);}
+
+.info-card img, .info-card video { width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:15px;}
+
+.info-card h3 {color: var(--accent1);
+  margin-bottom:8px;
+  font-size:1.2rem;}
+
+.info-card p { margin:0;
+  color:#e8e8e8;
+  font-size:0.98rem;
+  flex-grow:1;}
+
+footer { text-align:center;
+  color:#999;
+  padding:50px 20px 80px;
+  font-size:0.9rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏞 Best Adventure Film</h1>
+  <p>Experience the thrill, excitement, and wonder of an epic adventure film that immerses viewers in breathtaking worlds and unforgettable stories.</p>
+</header>
+
+<section>
+  <h2>Adventure Story & Plot</h2>
+  <p>The film takes you on a journey through uncharted lands, mysterious forests, and legendary landscapes. The protagonist faces thrilling challenges, uncovers hidden secrets, and overcomes obstacles, making it a rollercoaster of emotions and suspense.</p>
+  <div class="info-grid">
+    <div class="info-card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Epic Landscapes">
+      <h3>Epic Landscapes</h3>
+      <p>Vast mountains, dense forests, and flowing rivers provide a breathtaking backdrop for the adventure. Stunning cinematography transports viewers to every corner of this immersive world.</p>
+    </div>
+
+    <div class="info-card">
+     <iframe src="https://www.youtube.com/embed/RzBKcE6XLjw?list=PLNZZ4CvXraIvUuL8C2wuFppqgXrrhsxdY" title="Walt Disney Pictures logo (2006)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>Action & Thrills</h3>
+      <p>Heart-pounding action sequences, daring stunts, and suspenseful moments keep viewers on the edge of their seats, providing a cinematic adrenaline rush.</p>
+    </div>
+
+    <div class="info-card">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7d9eed8e-d0eb-47b0-9d93-bf02b6a30ada/dd0hpxm-12be5d4b-1055-4624-989c-30f7cdce1b3d.jpg/v1/fill/w_774,h_1032,q_70,strp/injustice_2___poster_2___by_pbd_by_pbdesign28_dd0hpxm-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzYwMCIsInBhdGgiOiJcL2ZcLzdkOWVlZDhlLWQwZWItNDdiMC05ZDkzLWJmMDJiNmEzMGFkYVwvZGQwaHB4bS0xMmJlNWQ0Yi0xMDU1LTQ2MjQtOTg5Yy0zMGY3Y2RjZTFiM2QuanBnIiwid2lkdGgiOiI8PTI3MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.RzJWuJuV_Ml33C4HT-B9nG6BrDGP5eCq7EcT9uwhjew" alt="Characters & Heroes">
+      <h3>Characters & Heroes</h3>
+      <p>Well-developed characters bring the story to life. The hero's courage, determination, and growth inspire audiences, while supporting characters add depth and emotion.</p>
+    </div>
+
+    <div class="info-card">
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>Immersive Scenes</h3>
+      <p>Experience action sequences, beautiful scenery, and interactive moments through video highlights that showcase the adventure film's excitement and grandeur.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Behind the Adventure</h2>
+  <p>The film combines cutting-edge cinematography, special effects, and sound design to create an unforgettable cinematic experience. Every scene is crafted to immerse the viewer fully in this adventurous world.</p>
+  <div class="info-grid">
+    <div class="info-card">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Filmmaking Magic">
+      <h3>Filmmaking Magic</h3>
+      <p>Advanced camera techniques, CGI, and sound effects bring the story to life. The film blends realism and fantasy seamlessly, creating a mesmerizing visual journey.</p>
+    </div>
+
+    <div class="info-card">
+      <img src="https://10fold.com/wp-content/uploads/2019/05/Audience-DEv-Blog-1024x546.jpg" alt="Audience Experience">
+      <h3>Audience Experience</h3>
+      <p>Every viewer feels part of the adventure, whether through suspense, awe-inspiring visuals, or emotional storytelling. The film creates a fully engaging cinematic adventure.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 World of Wonders | Adventure Film
+</footer>
+
+</body>
+</html>

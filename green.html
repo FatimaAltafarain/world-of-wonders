@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green World | World of Wonders</title>
+
+<style>
+:root {--green1: #00ffb3;
+  --green2: #00c86f;
+  --dark-bg: #001109;
+  --card-bg: rgba(255,255,255,0.06);}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {font-family:'Poppins',sans-serif;
+  background: radial-gradient(circle at top, #001f12, #000804 85%);
+  color:#fff;
+  min-height:100vh;
+  overflow-x:hidden;}
+
+header { text-align:center;
+  padding:70px 20px 30px;}
+
+header h1 { color:var(--green1);
+  font-size:2.6rem;
+  text-shadow:0 0 25px rgba(0,255,179,0.4);}
+
+header p { font-size:1.1rem;
+  color:#b8f2d0;
+  max-width:850px;
+  margin:10px auto 0;
+  line-height:1.6;}
+
+section { max-width:1000px;
+  margin:60px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:35px;}
+
+.card { background: var(--card-bg);
+  border-radius: 22px;
+  padding:25px;
+  backdrop-filter:blur(12px);
+  box-shadow:0 8px 35px rgba(0,0,0,0.4);
+  border:1px solid rgba(0,255,179,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;}
+
+.card:hover {transform:translateY(-8px);
+  box-shadow:0 0 40px rgba(0,255,179,0.25);}
+
+.card img { width:100%;
+  height:180px;
+  border-radius:16px;
+  object-fit:cover;
+  margin-bottom:15px;}
+
+.card h3 {color:var(--green1);
+  font-size:1.3rem;
+  margin-bottom:8px;}
+
+.card p { font-size:1rem;
+  color:#d8f8e8;
+  line-height:1.5;
+  margin-bottom:15px;}
+
+.glow-btn {align-self:center;
+  text-decoration:none;
+  background: linear-gradient(90deg, var(--green1), var(--green2));
+  color:#002a15;
+  padding:10px 26px;
+  border-radius:30px;
+  font-weight:600;
+  transition:0.3s ease;
+  box-shadow:0 0 30px rgba(0,255,179,0.25);}
+
+.glow-btn:hover {transform:scale(1.05);
+  box-shadow:0 0 40px rgba(0,255,179,0.4);}
+
+footer {text-align:center;
+padding:50px 20px 70px;
+  color:#7ad6a3;
+  font-size:0.9rem;}
+.glow-button { display: block;
+     width: fit-content;
+      margin: 20px auto 60px;
+      padding: 14px 34px;
+      color: #fff;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #002a15, rgba(0,255,179,0.25));
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 25px rgba(8, 131, 94, 0.89);
+      transition: 0.3s; }
+
+    .glow-button:hover {transform: scale(1.05);
+      box-shadow: 0 0 45px  rgba(18, 201, 146, 0.925) #215a07;}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌍 Green World</h1>
+  <p>Explore the harmony between nature and innovation — discover how we can make our planet greener, more sustainable, and full of life.</p>
+</header>
+
+<section>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80" alt="Make World Green">
+    <h3>How to Make the World Green</h3>
+    <p>Learn the simple yet powerful ways to make our planet thrive again — from planting trees and conserving energy to supporting clean energy and recycling. Every action matters for a sustainable tomorrow.</p>
+    <a href="makegreen.html" class="glow-btn">Explore More</a>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1200&q=80" alt="Green World Beauty">
+    <h3>Green World</h3>
+    <p>Step into the beauty of nature — explore eco-innovation, renewable living, and sustainable design shaping the green cities of the future. Discover how balance between nature and technology creates true wonder.</p>
+    <a href="greenbeauty.html" class="glow-btn">Discover Nature</a>
+  </div>
+</section>
+ <a href="wonders.html" class="glow-button">← Back to Wonders</a>
+<footer>
+  © 2025 World of Wonders | Green World
+</footer>
+
+</body>
+</html>

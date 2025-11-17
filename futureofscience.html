@@ -1,0 +1,270 @@
+<!-- future-science.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Future of Science | World of Wonders</title>
+
+  <style>
+    /* ========== Base ========== */
+    :root{
+      --bg1: #030014;
+      --bg2: #000010;
+      --glass: rgba(255,255,255,0.06);
+      --accent1: #00eaff;
+      --accent2: #a64dff;
+      --muted: #cfcfcf;
+      --card-w: 100%;
+      --max-w: 1100px;
+      --radius: 18px;}
+
+    *{box-sizing:border-box}
+    body{margin:0;
+      font-family: "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(circle at 20% 20%, var(--bg1), var(--bg2) 85%);
+      color: #fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+      overflow-x:hidden;}
+
+    header{padding:48px 20px 10px; text-align:center}
+    header h1{margin:0;
+      font-size:2.6rem;
+      color:var(--accent1);
+      text-shadow:0 0 22px rgba(0,230,255,0.12), 0 0 38px rgba(166,77,255,0.06);
+      letter-spacing:0.6px;}
+    .subtitle{color:var(--muted);
+      max-width:900px;
+      margin:12px auto 28px;
+      padding:0 20px;
+      font-size:1.05rem;}
+
+    main{max-width:var(--max-w); margin:0 auto; padding:30px 20px 80px}
+
+    /* ========== Section layout ========== */
+    .stage{display:flex;
+      gap:28px;
+      align-items:center;
+      margin:36px 0;
+      background:var(--glass);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 6px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+       backdrop-filter: blur(8px) saturate(1.05);}
+
+    /* alternate: image left / right */
+    .stage.even{flex-direction:row-reverse}
+
+    .stage-media{flex:1 1 420px;
+      min-width:260px;}
+
+    .stage-media img{width:100%;
+      height:100%;
+      max-height:360px;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
+      box-shadow:0 10px 30px rgba(0,0,0,0.6), 0 0 40px rgba(0,230,255,0.06);
+       border:1px solid rgba(255,255,255,0.03);}
+
+    .stage-media iframe{width:100%;
+      height:360px;
+      border:0;
+      border-radius:12px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+
+    .stage-body{flex:1 1 480px;
+      min-width:260px;
+      padding:6px 8px;}
+
+    .stage-body h2{margin-top:0;
+      margin-bottom:8px;
+      color:var(--accent1);
+      font-size:1.4rem;
+      text-shadow:0 0 10px rgba(0,230,255,0.08);}
+
+    .stage-body p{margin:0; color:#e7e7e7; font-size:1rem}
+
+    .stage-body ul{margin:12px 0 0 18px;
+      color:#e7e7e7;}
+
+    /* ========== Emphasis card ========== */
+    .highlight{margin:36px auto;
+      max-width:900px;
+      background: linear-gradient(180deg, rgba(0,230,255,0.03), rgba(166,77,255,0.02));
+      border-radius:14px;
+      padding:18px;
+      border:1px solid rgba(0,230,255,0.06);
+      text-align:center;
+      box-shadow:0 8px 40px rgba(0,0,0,0.5); }
+    .highlight h3{margin:0 0 8px; color:var(--accent2)}
+    .highlight p{margin:0;color:var(--muted)}
+
+    /* ========== Footer / back link ========== */
+    .back-wrap{ text-align:center; margin-top:40px }
+    .back{
+      display:inline-block;
+      padding:12px 26px;
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:#fff;
+      border-radius:28px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 8px 30px rgba(0,0,0,0.5), 0 0 30px rgba(0,230,255,0.07);
+    }
+    .back:hover{transform:translateY(-3px); transition:all .18s ease}
+
+    footer{color:#9aa; text-align:center; padding:40px 10px 80px; font-size:0.9rem}
+
+    /* ========== Responsive ========== */
+    @media (max-width:980px){
+      .stage{flex-direction:column}
+      .stage.even{flex-direction:column}
+      .stage-media img, .stage-media iframe{max-height:320px}
+    }
+
+    @media (max-width:520px){
+      header h1{font-size:1.9rem}
+      .subtitle{font-size:0.98rem}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🔬 Future of Science</h1>
+    <div class="subtitle">
+      Deep innovations shaping the next decades — robotics, nanotechnology, quantum computing, biotechnology and sustainable systems that will redefine life, discovery and industry.
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Section: Robotics & Autonomous Systems -->
+    <article class="stage">
+      <div class="stage-media">
+        <img src="data:image/webp;base64,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" alt="Robotics and autonomous systems">
+      </div>
+      <div class="stage-body">
+        <h2>🤖 Robotics & Autonomous Systems</h2>
+        <p>
+          Robots will move beyond factories into fieldwork, surgery, exploration and daily life. Advanced sensors, soft robotics, and human-robot collaboration enable safer, adaptable machines.
+        </p>
+        <ul>
+          <li><strong>Medical robotics:</strong> microsurgery robots, exoskeletons for rehabilitation.</li>
+          <li><strong>Exploration robots:</strong> resilient bots for deep-sea and planetary missions.</li>
+          <li><strong>AI integration:</strong> autonomy combined with real-time learning for decision-making.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Section: Nanotechnology -->
+    <article class="stage even">
+      <div class="stage-media">
+        <img src="https://th.bing.com/th/id/OIP.ZMZ6_Z8eoZdUvDNSPSKIGQHaDt?w=343&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Nanotechnology illustration">
+      </div>
+      <div class="stage-body">
+        <h2>🔬 Nanotechnology & Materials</h2>
+        <p>
+          At the nanoscale we can design materials with exceptional strength, electrical properties and reactivity — enabling targeted drug delivery, ultra-efficient batteries, and novel electronics.
+        </p>
+        <ul>
+          <li><strong>Targeted therapeutics:</strong> nanoparticles delivering drugs to specific cells.</li>
+          <li><strong>Next-gen materials:</strong> graphene, metamaterials, and lightweight super-strong composites.</li>
+          <li><strong>Energy devices:</strong> nanoscale electrodes for faster charging and higher capacity.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Section: AI & Scientific Discovery -->
+    <article class="stage">
+      <div class="stage-media">
+        <iframe src="https://www.bing.com/ck/a?!&&p=6644bc92efd23e74edb6d5d5dbfcdc26337f4f5b871eb776928618b6135643a4JmltdHM9MTc2MjczMjgwMA&ptn=3&ver=2&hsh=4&fclid=192e6fac-964b-6d1c-1e71-798a97836c24&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9QUkrYWNjZWxlcmF0aW5nK2Rpc2NvdmVyeSZtaWQ9ODZFOURBNjI1QTUyNTBBODdENDQ4NkU5REE2MjVBNTI1MEE4N0Q0NCZGT1JNPVZJUkU" title="AI Accelerating Science" allowfullscreen></iframe>
+      </div>
+      <div class="stage-body">
+        <h2>🧠 AI Accelerating Discovery</h2>
+        <p>
+          Artificial intelligence will power hypothesis generation, automate experiments, and find patterns in massive datasets. From drug discovery to climate models, AI shortens timelines from years to months.
+        </p>
+        <ul>
+          <li><strong>Automated labs:</strong> robots + AI running and optimizing experiments 24/7.</li>
+          <li><strong>Generative models:</strong> designing molecules, materials, and experiments.</li>
+          <li><strong>Data fusion:</strong> combining simulations, instruments, and satellites for deeper insight.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Section: Quantum Technologies -->
+    <article class="stage even">
+      <div class="stage-media">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" alt="Quantum computing hardware">
+      </div>
+      <div class="stage-body">
+        <h2>🔗 Quantum Information & Computing</h2>
+        <p>
+          Quantum computers and sensors will tackle problems in chemistry, cryptography and materials science that are intractable for classical machines — enabling breakthroughs in simulation and optimization.
+        </p>
+        <ul>
+          <li><strong>Quantum chemistry:</strong> precise simulations of molecules for drug & material design.</li>
+          <li><strong>Quantum sensors:</strong> ultraprecise measurement for navigation and detection.</li>
+          <li><strong>Hybrid computing:</strong> classical + quantum workflows for practical solutions.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Section: Biotechnology & Synthetic Biology -->
+    <article class="stage">
+      <div class="stage-media">
+        <img src="https://th.bing.com/th/id/OIP.UZkctO_SCpW5zzpfWsAPGAHaEN?w=306&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Biotechnology lab">
+      </div>
+      <div class="stage-body">
+        <h2>🧬 Biotechnology & Synthetic Biology</h2>
+        <p>
+          Manipulating genetic code with tools like CRISPR enables disease therapies, engineered microbes for pollution cleanup, and synthetic organisms designed for specific tasks — transforming health and industry.
+        </p>
+        <ul>
+          <li><strong>Gene therapies:</strong> curing genetic disorders via targeted edits.</li>
+          <li><strong>Synthetic microbes:</strong> producing medicines, biofuels, and breaking down waste.</li>
+          <li><strong>Regenerative medicine:</strong> lab-grown organs and tissue repair.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Section: Sustainable & Planetary Technologies -->
+    <article class="stage even">
+      <div class="stage-media">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=80" alt="Renewable energy and sustainability">
+      </div>
+      <div class="stage-body">
+        <h2>🌱 Sustainable Tech & Planetary Stewardship</h2>
+        <p>
+          Science will power climate solutions: fusion research, carbon capture, smart grids, and materials that reduce waste. Global monitoring and precision agriculture will help feed growing populations sustainably.
+        </p>
+        <ul>
+          <li><strong>Clean energy:</strong> progress in fusion, better batteries, and solar innovations.</li>
+          <li><strong>Carbon tech:</strong> capture, utilization, and removal at scale.</li>
+          <li><strong>Planet health:</strong> satellites + AI monitoring ecosystems and informing policy.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Highlight / Key takeaway -->
+    <div class="highlight">
+      <h3>Key takeaway</h3>
+      <p>Future science is interdisciplinary, breakthroughs arise where fields meet. Robotics, AI, quantum, biotech and materials together will redefine what’s possible.</p>
+    </div>
+
+    <!-- Back link -->
+    <div class="back-wrap">
+      <a class="back" href="science.html">← Back to Science Dome</a>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2025 World of Wonders | Future of Science
+  </footer>
+</body>
+</html>

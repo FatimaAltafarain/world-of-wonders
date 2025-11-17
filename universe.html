@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Endless Universe | Space Exploration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style> body {margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: radial-gradient(circle at 20% 20%, #040014, #000010 80%);
+      overflow-x: hidden;}
+
+    header {text-align: center;
+      padding: 40px 20px 10px; }
+     header h1 {
+      font-size: 2.6em; 
+      text-align: center;
+      color: #00eaff;
+      text-shadow: 0 0 25px #00eaff, 0 0 45px #a64dff;}
+
+    p.intro { text-align: center;
+      font-size: 1.1em;
+      color: #cfcfcf;
+      width: 85%;
+      max-width: 800px;
+      margin: 10px auto 60px;
+      line-height: 1.6;}
+ /* -------- CARD GRID -------- */
+    .overview-cards {display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 35px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 15px 80px;}
+
+    .fact-box { background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      border-radius: 25px;
+      width: 300px;
+      padding: 25px 30px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      text-align: left;
+      color: white;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);}
+
+ .fact-box:hover {transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 30px #00eaff, 0 0 60px #a64dff;
+      border-color: rgba(0, 255, 255, 0.5);}
+
+    .fact-box h3 { color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+      margin-bottom: 10px;
+      font-size: 1.3em; }
+
+    .fact-box p {color: #d9d9d9;
+      line-height: 1.5;
+      font-size: 0.97em;}
+
+/* -------- BUTTON -------- */
+    .glow-button { display: block;
+      width: fit-content;
+      margin: 20px auto 60px;
+      padding: 14px 34px;
+      color: #fff;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #00eaff, #a64dff);
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 25px #00ffff;
+      transition: 0.3s; }
+
+    .glow-button:hover {transform: scale(1.05);
+      box-shadow: 0 0 45px #00ffff, 0 0 80px #a64dff;}
+
+    footer {text-align: center;
+      color: #888;
+      padding: 15px 0 40px;
+      font-size: 0.9em;}
+
+</style>
+
+<body class="detail-page">
+
+  <header>
+    <h1 class="logo">🌍 World of Wonders</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="wonders.html">Wonders</a>
+      <a href="science.html">Science Dome</a>
+      <a href="space.html">Space Exploration</a>
+      <a href="universe.html" class="active">Endless Universe</a>
+    </nav>
+  </header>
+
+   <header>
+    <h1> Endless Universe</h1>
+  </header>
+
+  <p class="intro">
+
+
+
+  <!-- -------- CLICKABLE GLOWING CARDS -------- -->
+  <section class="overview-cards">
+    <div class="fact-box" data-link="billions.html">
+      <h3>🌠 Billions of Galaxies</h3>
+      <p>Discover the countless galaxies that fill the universe, from spirals to giant ellipticals, each holding billions of stars.</p>
+    </div>
+
+    <div class="fact-box" data-link="lightyears.html">
+      <h3>💫 Light Years Away</h3>
+      <p>Travel across unimaginable distances measured in light years, the speed at which light itself journeys through space.</p>
+    </div>
+
+    <div class="fact-box" data-link="expanding.html">
+      <h3>🌌 Expanding Cosmos</h3>
+      <p>Learn how the universe keeps stretching wider every moment, galaxies drifting apart in an infinite cosmic dance.</p>
+    </div>
+  </section>
+<!-- -------- BACK BUTTON -------- -->
+  <a href="universe.html" class="glow-button">← Back to Space Exploration</a>
+
+  <footer>© 2025 World of Wonders | Endless Universe</footer>
+
+  <!-- -------- WORKING JAVASCRIPT -------- -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll(".fact-box");
+      cards.forEach(card => {
+        const target = card.dataset.link;
+        if (target) {
+          card.style.cursor = "pointer";
+          card.addEventListener("click", () => {
+            window.location.href = target;
+          });
+        }
+      });
+    });
+  </script>
+
+
+      
+ 
+</body>
+</html>

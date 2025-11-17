@@ -1,0 +1,163 @@
+<!-- art-dimensions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art & Dimensions | World of Wonders</title>
+
+<style>
+:root { --bg1: #050014;
+  --bg2: #000010;
+  --accent1: #ff6a00;
+  --accent2: #ff00c8;
+  --glass: rgba(255,255,255,0.06);
+  --radius: 20px;}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body { font-family:'Poppins',sans-serif;
+  background: radial-gradient(circle at 25% 25%, var(--bg1), var(--bg2) 85%);
+  color:#fff;
+  min-height:100vh;
+  overflow-x:hidden;}
+
+header { text-align:center;
+  padding:60px 20px 20px;}
+
+header h1 { font-size:2.5rem;
+  color: var(--accent1);
+  text-shadow:0 0 30px rgba(255,106,0,0.3);}
+
+header p { font-size:1.1rem;
+  max-width:800px;
+  margin:10px auto;
+  color:#bbb;}
+
+section { max-width:1000px;
+  margin:60px auto;
+  padding:0 20px;}
+
+section h2 {color: var(--accent2);
+font-size:1.8rem;
+  text-align:center;
+  margin-bottom:20px;
+text-shadow:0 0 10px rgba(255,0,200,0.2);}
+
+section p { color:#ddd;
+  font-size:1.05rem;
+  line-height:1.6;
+  text-align:justify;
+  margin-bottom:40px;}
+
+
+.info-grid { display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;}
+
+.info-card {background: var(--glass);
+  border-radius: var(--radius);
+  padding:20px;
+  box-shadow:0 6px 30px rgba(0,0,0,0.5);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+.info-card:hover {transform: translateY(-6px);
+  box-shadow:0 0 50px rgba(255,106,0,0.15);}
+
+.info-card img { width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:15px;}
+
+.info-card h3 { color: var(--accent1);
+  margin-bottom:8px;
+  font-size:1.2rem;}
+
+.info-card p { margin:0;
+  color:#e8e8e8;
+  font-size:0.98rem;}
+
+footer { text-align:center;
+  color:#999;
+  padding:50px 20px 80px;
+  font-size:0.9rem;}
+
+ .glow-button { display: block;  width: fit-content;
+      margin: 20px auto 60px;
+      padding: 14px 34px;
+      color: #fff;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #b413a7, #a56108);
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 25px #ff00ff;
+      transition: 0.3s; }
+
+    .glow-button:hover {transform: scale(1.05);
+      box-shadow: 0 0 45px #ad1fa6, 0 0 80px #d37b16;}
+
+ 
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Art & Dimensions</h1>
+  <p>Dive into the world of creativity where digital artistry and AI-powered innovations shape modern art and imagination.</p>
+</header>
+
+<!-- Section 1: Digital Artistry -->
+<section>
+  <h2>🎨 Digital Artistry</h2>
+  <p>Digital Artistry is the evolution of traditional art into the digital domain. Artists use software, tablets, and tools to create immersive visuals, animations, and interactive experiences. Digital mediums allow precision, versatility, and exploration of creative boundaries.</p>
+  <div class="info-grid">
+    <div class="info-card">
+      <img src="https://sadesign.ai/pictures/picfullsizes/2025/11/08/pgz1762591324.jpg" alt="Digital Painting">
+      <h3>Digital Painting</h3>
+      <p>Artists paint using tablets and software, blending colors, textures, and styles in ways impossible on canvas. Layers, effects, and digital brushes expand creative freedom.</p>
+    </div>
+    <div class="info-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.PJ30TboUPtEHeGIE3AlytQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Animation & Motion">
+      <h3>Animation & Motion</h3>
+      <p>From 2D sketches to 3D animations, digital tools allow storytellers to animate characters and objects with realism and artistic flair, creating engaging visual narratives.</p>
+    </div>
+    <div class="info-card">
+      <img src="https://i.pinimg.com/originals/a3/a2/de/a3a2de1c8627d7ce468635608aa25ae3.jpg" alt="Interactive Art">
+      <h3>Interactive Art</h3>
+      <p>Digital artistry also includes interactive experiences, virtual galleries, and immersive installations where viewers become participants, exploring art in new dimensions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: AI-Powered Creative World -->
+<section>
+  <h2>🤖 AI-Powered Creative World</h2>
+  <p>AI-powered creativity blends human imagination with machine intelligence. Using generative models, AI can produce art, music, stories, and designs, assisting humans or generating entirely original content.</p>
+  <div class="info-grid">
+    <div class="info-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.y60JFEX5slI2yrBAnhJn1wHaE3?pid=ImgDet&w=192&h=126&c=7&o=7&rm=3" alt="AI Art Generation">
+      <h3>AI Art Generation</h3>
+      <p>AI learns styles from thousands of artworks to create unique images, adapting techniques, color palettes, and forms to generate stunning visuals automatically.</p>
+    </div>
+    <div class="info-card">
+      <img src="https://eastside-online.org/wp-content/uploads/2024/11/AI-Music-Creation-Tools-2.jpg" alt="AI Music & Composition">
+      <h3>AI Music & Composition</h3>
+      <p>Machine learning models can compose melodies, harmonies, and rhythms, producing music that sounds human-made and exploring new creative patterns.</p>
+    </div>
+    <div class="info-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.UA1Vt9xMH6DsOZkd4-xJUwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="AI Writing & Storytelling">
+      <h3>AI Writing & Storytelling</h3>
+      <p>AI can generate stories, poems, or scripts by analyzing language patterns, grammar, and narrative structure, enabling creative writing assistance or autonomous content generation.</p>
+    </div>
+  </div>
+</section>
+ <a href="wonders.html" class="glow-button">← Back to Wonders</a>
+<footer>
+  © 2025 World of Wonders | Art & Dimensions
+</footer>
+
+</body>
+</html>

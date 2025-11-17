@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy & Forces | World of Wonders</title>
+  <a href="style.css"></a>
+  <style>
+    body { margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: radial-gradient(circle at top, #030014, #000010 80%);
+      overflow-x: hidden;}
+
+    header { text-align: center;
+      padding: 60px 20px 30px; }
+
+    header h1 {font-size: 2.6em;
+      color: #00eaff;
+      text-shadow: 0 0 25px #00eaff, 0 0 45px #a64dff; }
+
+    .intro {max-width: 850px;
+      margin: 0 auto 50px;
+      text-align: center;
+      color: #ccc;
+      font-size: 1.1em;
+      line-height: 1.6;
+      padding: 0 20px;}
+
+    .section {max-width: 1000px;
+      margin: 0 auto 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      padding: 0 20px;}
+
+    .section:nth-child(even) {flex-direction: row-reverse;}
+
+    .section img {flex: 1 1 350px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,255,255,0.3);}
+
+    .text-box {flex: 1 1 400px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 20px;
+      padding: 25px 30px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,255,255,0.15);
+      transition: all 0.3s ease;}
+
+    .text-box:hover {transform: translateY(-8px);
+      box-shadow: 0 0 35px #00eaff, 0 0 55px #a64dff;}
+
+    .text-box h2 {color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+      margin-bottom: 10px;
+      font-size: 1.6em;}
+
+    .text-box p { color: #ddd;
+    line-height: 1.7;
+      font-size: 1.05em;}
+
+    .video-container { max-width: 1000px;
+      margin: 0 auto 80px;
+      padding: 0 20px;
+      text-align: center; }
+
+    .video-container iframe {width: 100%;
+      height: 500px;
+      max-width: 900px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0,255,255,0.3);}
+
+    footer {text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #888;}
+    @media (max-width: 800px) {.section {flex-direction: column;}}
+
+   .video-container iframe {height: 300px;}
+
+   .glow-button { display: block;
+      width: fit-content;
+      margin: 20px auto 60px;
+      padding: 14px 34px;
+      color: #fff;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #00eaff, #a64dff);
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 25px #00ffff;
+      transition: 0.3s; }
+
+    .glow-button:hover {transform: scale(1.05);
+      box-shadow: 0 0 45px #00ffff, 0 0 80px #a64dff;}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚡ Energy & Forces</h1>
+  </header>
+
+  <p class="intro">
+    Learn how invisible forces like electricity and magnetism power our world.  
+    From the smallest circuits to vast power grids, the hidden energy flows that keep modern life moving.
+  </p>
+
+  <!-- Video Section -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/HcbJsUp7vqo" allowfullscreen></iframe>
+  </div>
+
+  <!-- Section 1: Electricity -->
+  <div class="section">
+    <img src="https://ichef.bbci.co.uk/images/ic/976xn/p0610hky.jpg" alt="Electricity flowing wires">
+    <div class="text-box">
+      <h2>🔌 Electricity – Flow of Charge</h2>
+      <p>
+        Electricity is the movement of electrons through conductors.  
+        In homes and industries, this flow powers lights, motors, computers and more.  
+        From batteries to power stations, the control of electric current is the foundation of modern technology.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2: Magnetism -->
+  <div class="section">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.XuM5Eiqt6Y-de6D6JmcphgHaEK?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Magnetic field visualization">
+    <div class="text-box">
+      <h2>🧲 Magnetism – Invisible Force Fields</h2>
+      <p>
+        Magnetism arises from moving electric charges and intrinsic particle spins.  
+        Compasses point North due to Earth’s magnetic field.  
+        Inside generators and motors, magnetic fields convert between mechanical and electrical energy.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 3: Electromagnetism & Power Generation -->
+  <div class="section">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.FiOsupZyjfjiwirq-XMBRAHaE7?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Power station turbines">
+    <div .text-box>
+      <h2>⚙ Electromagnetism & Power Generation</h2>
+      <p>
+        The connection between electricity and magnetism — discovered by James Clerk Maxwell and Michael Faraday — enables power generation.  
+        Turbines rotate magnets inside coils generating current (Faraday’s law).  
+        Your light switch, your phone charger, and entire power grids rely on these invisible interactions.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 4: Everyday Applications -->
+  <div class="section">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.CEDTtG2xYDGXpYc0D7z5QAHaFj?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Electric circuit board">
+    <div class="text-box">
+      <h2>💡 Everyday Applications</h2>
+      <p>
+        From magnets holding up speakers, to magnetic resonance imaging (MRI) in hospitals,  
+        and from induction cooktops to high-speed trains using magnetic levitation — electricity and magnetism are everywhere.  
+        These hidden forces shape how we live, work, and connect in the modern world.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 5: The Future of Energy & Forces -->
+  <div class="section">
+    <img src="https://th.bing.com/th/id/OIP.ZOIfnALz0-8-NjgvOYO6UQHaE8?o=7&cb=ucfimgc2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Renewable energy and electromagnetic technology">
+    <div class="text-box">
+      <h2>🔋 Future of Energy & Forces</h2>
+      <p>
+        The future holds wireless power transfer, fusion reactors, room-temperature superconductors and smart grids.  
+        Invisible forces will become even more seamless — powering space missions, electric vehicles, and renewable cities around the world.
+      </p>
+    </div>
+  </div>
+   <a href="science.html" class="glow-button">← Back to science doom</a>
+
+  <footer>© 2025 World of Wonders | Energy & Forces</footer>
+
+</body>
+</html>
+
+ 

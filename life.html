@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life & Biology | World of Wonders</title>
+  <style>
+    body { margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: radial-gradient(circle at top, #020010, #00000d 90%);
+      overflow-x: hidden;}
+    header {  text-align: center;
+      padding: 60px 20px 30px;}
+    header h1 { font-size: 2.6em;
+      color: #00eaff;
+      text-shadow: 0 0 25px #00eaff, 0 0 45px #a64dff;}
+    .intro { max-width: 850px;
+      margin: 0 auto 50px;
+      text-align: center;
+      color: #ccc;
+      font-size: 1.1em;
+      line-height: 1.6;
+      padding: 0 20px; }
+    .section { max-width: 1000px;
+      margin: 0 auto 80px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      padding: 0 20px;}
+    .section:nth-child(even) { flex-direction: row-reverse;}
+    .section img { flex: 1 1 350px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,255,255,0.3);}
+    .text-box { flex: 1 1 400px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 20px;
+      padding: 25px 30px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,255,255,0.15);
+      transition: all 0.3s ease;}
+    .text-box:hover {transform: translateY(-8px);
+      box-shadow: 0 0 35px #00eaff, 0 0 55px #a64dff;}
+    .text-box h2 { color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+      margin-bottom: 10px;
+      font-size: 1.6em;}
+    .text-box p { color: #ddd;
+      line-height: 1.7;
+      font-size: 1.05em;}
+    .video-container { max-width: 1000px;
+      margin: 0 auto 80px;
+      padding: 0 20px;
+      text-align: center;}
+    .video-container iframe { width: 100%;
+      height: 500px;
+      max-width: 900px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0,255,255,0.3);}
+    footer {text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #888;}
+    @media (max-width: 800px) {.section {flex-direction: column;}
+      .video-container iframe {
+        height: 300px;}}
+     .glow-button { display: block;
+      width: fit-content;
+      margin: 20px auto 60px;
+      padding: 14px 34px;
+      color: #fff;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #00eaff, #a64dff);
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 25px #00ffff;
+      transition: 0.3s; }
+
+    .glow-button:hover {transform: scale(1.05);
+      box-shadow: 0 0 45px #00ffff, 0 0 80px #a64dff;}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💧 Life & Biology</h1>
+  </header>
+
+  <p class="intro">
+    Dive into cells, DNA and evolution to understand how life grows and survives.  
+    Explore the building blocks of living beings, from the microscopic to the magnificent.
+  </p>
+
+  <!-- Optional video section -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/S6LXyzZn5Ls" allowfullscreen></iframe>
+  </div>
+
+  <!-- Section 1: Cells – The Unit of Life -->
+  <div class="section">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.w7CZveAiHVUzWfKCcOU5LgHaEK?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cell diagram" />
+    <div class="text-box">
+      <h2>🧬 Cells – The Unit of Life</h2>
+      <p>
+        All living organisms are made of cells – the smallest units that can carry out life’s processes.  
+        From single-celled bacteria to complex multicellular humans, the cell is the foundation of biology.  
+        Inside each cell are organelles (like the nucleus, mitochondria, and ribosomes) that perform essential tasks: energy production, genetic storage, and protein manufacturing.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2: DNA & Genetic Code -->
+  <div class="section">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.2c7yKT2OHv1hZYt-JaGOZAHaFj?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="DNA double helix" />
+    <div class="text-box">
+      <h2>🧬 DNA & The Genetic Code</h2>
+      <p>
+        Deoxyribonucleic Acid (DNA) carries the instructions for life.  
+        It’s a long molecule structured like a twisted ladder (double helix) containing four bases (A, T, C, and G).  
+        Genes segment this code to build proteins which do most of the work inside cells.  
+        Every cell in your body has roughly the same DNA, yet different cells activate different genes to perform varied functions.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 3: Evolution – Life Over Time -->
+  <div class="section">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.bGtdQabFpFyUnAIKYhnsrgHaF5?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tree of life evolution" />
+    <div class="text-box">
+      <h2>🌱 Evolution & Adaptation</h2>
+      <p>
+        Evolution is the process by which species change over generations through mutation, natural selection, and adaptation.  
+        Life began more than 3.5 billion years ago as simple cells. Over time these changed, diversified, and formed the incredible range of plants, animals and microorganisms we see today.  
+        Adaptation allows species to survive changing environments and evolve into new forms.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 4: Cells, DNA & Survival -->
+  <div class="section">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.1cm7cgL-xir1NyhTyF02KgHaHT?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cell division stem cells" />
+    <div class="text-box">
+      <h2>🔬 From Cells to Organisms</h2>
+      <p>
+        Cells divide and differentiate—meaning they become specialised.  
+        Stem cells can become many different types of cells (like nerve, muscle or blood cells).  
+        Organisms grow and repair tissue through cell division. The genetic code in DNA directs these processes.  
+        Mistakes in division or DNA (mutations) can lead to variation in life or disease.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 5: Life’s Frontier – Biotechnology & the Future -->
+  <div class="section">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.lNMvvdhze962omDRKzNPnAHaE7?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Biotechnology lab microscope" />
+    <div class="text-box">
+      <h2>🚀 Biotechnology & the Future of Life</h2>
+      <p>
+        Modern biotechnology uses knowledge of cells and DNA to reinvent life: gene editing (CRISPR), synthetic biology, and regenerative medicine.  
+        We are building new life-forms, repairing damaged tissues, and exploring life beyond Earth.  
+        The future of biology is bold and the building blocks are still cells and DNA.
+      </p>
+    </div>
+  </div>
+   <a href="science.html" class="glow-button">← Back to Science doom</a>
+
+  <footer>© 2025 World of Wonders | Life & Biology</footer>
+
+</body>
+</html>
+ 

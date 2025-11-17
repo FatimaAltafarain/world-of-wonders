@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expanding Cosmos | Endless Universe</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: radial-gradient(circle at center, #010012, #02001a, #060021);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      overflow-x: hidden;}
+
+    header { padding: 20px; }
+
+    h1.logo {color: #00ffff;
+      text-shadow: 0 0 25px #00ffff;
+      font-size: 2em;}
+
+    h2 {margin-top: 50px;
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 0 0 25px #00eaff;}
+
+    p.intro { color: #cfcfcf;
+      font-size: 1.1em;
+      width: 80%;
+      margin: 10px auto 60px;
+      line-height: 1.6;}
+
+    .fact-section { display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      margin: 40px auto 80px;
+      width: 90%;
+      max-width: 950px;}
+
+    .fact-box {background: rgba(255,255,255,0.08);
+      border-radius: 25px;
+      padding: 25px 30px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0,255,255,0.3);
+      transition: all 0.6s ease;
+      opacity: 0;
+      transform: translateY(60px);
+      animation: fadeIn 1s ease forwards;
+      text-align: left;}
+
+    .fact-box:nth-child(odd) {align-self: flex-start;
+      margin-left: 5%;
+      animation-delay: 0.3s;}
+
+    .fact-box:nth-child(even) {align-self: flex-end;
+      margin-right: 5%;
+      animation-delay: 0.6s;}
+
+    @keyframes fadeIn { from {opacity: 0; transform: translateY(60px);}
+      to {opacity: 1; transform: translateY(0);}}
+
+    .fact-box h3 { color: #00ffff;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+      text-shadow: 0 0 15px #00ffff;}
+
+    .fact-box p { color: #ddd;
+      font-size: 1rem;
+      line-height: 1.7;}
+
+    .glow-button { display: inline-block;
+      margin: 40px 0;
+      padding: 14px 30px;
+      color: #fff;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #00eaff, #a64dff);
+      box-shadow: 0 0 25px #00ffff;
+      text-decoration: none;
+      transition: 0.3s;}
+
+    .glow-button:hover {box-shadow: 0 0 40px #00ffff, 0 0 60px #a64dff;
+      transform: scale(1.05);}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">🌍 World of Wonders</h1>
+     <nav>
+      <a href="index.html">Home</a>
+      <a href="wonders.html">Wonders</a>
+      <a href="science.html">Science Dome</a>
+      <a href="space.html">Space Exploration</a>
+      <a href="universe.html">Endless Universe</a>
+      <a href="expanding.html" class="active">expanding cosmos</a>
+    </nav>
+  </header>
+
+  <h2>🌌 Expanding Cosmos</h2>
+  <p class="intro">
+    Discover how the universe is constantly expanding, stretching galaxies farther apart over time.
+  </p>
+
+  <section class="fact-section">
+
+    <div class="fact-box">
+      <h3>🌠 Cosmic Expansion</h3>
+      <p>The universe has been expanding since the Big Bang, about 13.8 billion years ago. Space itself stretches, moving galaxies apart.</p>
+    </div>
+
+    <div class="fact-box">
+      <h3>💫 Hubble's Observation</h3>
+      <p>Astronomer Edwin Hubble discovered that galaxies are moving away from us, showing that the universe is expanding uniformly in all directions.</p>
+    </div>
+
+    <div class="fact-box">
+      <h3>🌍 Dark Energy</h3>
+      <p>The mysterious dark energy accelerates the expansion of the universe, making galaxies move away faster over time.</p>
+    </div>
+
+    <div class="fact-box">
+      <h3>🔭 Observable Universe</h3>
+      <p>Even though the universe is enormous, we can only observe galaxies whose light has had time to reach us — billions of light years away.</p>
+    </div>
+
+    <div class="fact-box">
+      <h3>💫 Future of Expansion</h3>
+      <p>Scientists predict that the universe will continue expanding, possibly forever, creating an ever-growing cosmic horizon.</p>
+    </div>
+
+  </section>
+
+  <a href="universe.html" class="glow-button">← Back to Endless Universe</a>
+
+  <footer>© 2025 World of Wonders | Expanding Cosmos</footer>
+
+</body>
+</html>

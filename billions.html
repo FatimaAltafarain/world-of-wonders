@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billions of Galaxies | Endless Universe</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {background: radial-gradient(circle at center, #010012, #02001a, #060021);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      overflow-x: hidden;}
+
+    header { padding: 20px;}
+
+    h1.logo { color: #00ffff;
+      text-shadow: 0 0 25px #00ffff;
+      font-size: 2em;}
+
+    h2 {margin-top: 50px;
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 0 0 25px #00eaff;}
+
+    p.intro {color: #cfcfcf;
+      font-size: 1.1em;
+      width: 80%;
+      margin: 10px auto 60px;
+      line-height: 1.6;}
+
+    .fact-section {display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      margin: 40px auto 80px;
+      width: 90%;
+      max-width: 950px;}
+
+    .fact-box { background: rgba(255,255,255,0.08);
+      border-radius: 25px;
+      padding: 25px 30px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0,255,255,0.3);
+      transition: all 0.6s ease;
+      opacity: 0;
+      transform: translateY(60px);
+      animation: fadeIn 1s ease forwards;
+      text-align: left;}
+
+    .fact-box:nth-child(odd) {align-self: flex-start;
+      margin-left: 5%;
+      animation-delay: 0.3s;}
+
+    .fact-box:nth-child(even) {align-self: flex-end;
+      margin-right: 5%;
+      animation-delay: 0.6s;}
+
+    @keyframes fadeIn { from {opacity: 0; transform: translateY(60px);}
+      to {opacity: 1; transform: translateY(0);}}
+
+    .fact-box h3 {color: #00ffff;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+      text-shadow: 0 0 15px #00ffff; }
+
+    .fact-box p { color: #ddd;
+      font-size: 1rem;
+      line-height: 1.7;}
+
+    .glow-button { display: inline-block;
+      margin: 40px 0;
+      padding: 14px 30px;
+      color: #fff;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #00eaff, #a64dff);
+      box-shadow: 0 0 25px #00ffff;
+      text-decoration: none;
+      transition: 0.3s;}
+
+    .glow-button:hover { box-shadow: 0 0 40px #00ffff, 0 0 60px #a64dff;
+      transform: scale(1.05);}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">🌍 World of Wonders</h1>
+     <nav>
+      <a href="index.html">Home</a>
+      <a href="wonders.html">Wonders</a>
+      <a href="science.html">Science Dome</a>
+      <a href="space.html">Space Exploration</a>
+      <a href="universe.html">Endless Universe</a>
+      <a href="billions.html" class="active">Billions of galaxies</a>
+    </nav>
+  </header>
+
+  <h2>🌠 Billions of Galaxies</h2>
+  <p class="intro">
+    Explore the massive collection of galaxies in the universe — their types, stars, and cosmic wonders.
+  </p>
+
+  <section class="fact-section">
+
+    <div class="fact-box">
+      <h3>🌀 Spiral Galaxies</h3>
+      <p>Spiral galaxies, like the Milky Way, have a flat rotating disk with arms spiraling out from the center. Stars, planets, and nebulae populate these arms.</p>
+    </div>
+
+    <div class="fact-box">
+      <h3>🌐 Elliptical Galaxies</h3>
+      <p>Elliptical galaxies are shaped like stretched spheres or ellipsoids. They are mostly composed of older stars and have less gas and dust.</p>
+    </div>
+
+    <div class="fact-box">
+      <h3>🌟 Irregular Galaxies</h3>
+      <p>Irregular galaxies have no defined shape. They often form due to gravitational interactions and collisions with other galaxies.</p>
+    </div>
+
+    <div class="fact-box">
+      <h3>💫 Star Clusters</h3>
+      <p>Galaxies contain billions of stars grouped in clusters. These stars can range from young, bright stars to ancient, dim stars.</p>
+    </div>
+
+    <div class="fact-box">
+      <h3>🔭 Cosmic Wonders</h3>
+      <p>Within galaxies, we find nebulae, black holes, supernovae, and many other fascinating structures that shape the universe.</p>
+    </div>
+
+  </section>
+
+  <a href="universe.html" class="glow-button">← Back to Endless Universe</a>
+
+  <footer>© 2025 World of Wonders | Billions of Galaxies</footer>
+
+</body>
+</html>

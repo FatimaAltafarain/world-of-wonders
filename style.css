@@ -1,0 +1,75 @@
+/* ==== General ==== */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { min-height: 100vh; background: radial-gradient(circle at top, #0a0a1a 0%, #000 100%); color: white; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+.logo { font-size: 1.5rem; letter-spacing: 2px; }
+nav a { color: #ccc; margin: 0 15px; text-decoration: none; transition: color 0.3s; }
+nav a:hover, nav a.active { color: #00ffff; }
+
+/* ==== Home Hero ==== */
+.hero { text-align: center; padding: 120px 20px; }
+.hero h2 { font-size: 2.5rem; color: #00e6ff; text-shadow: 0 0 10px #00e6ff; }
+.hero .desc { max-width: 600px; margin: 20px auto; line-height: 1.6; color: #aaa; }
+.glow-button { display: inline-block; margin-top: 40px; padding: 15px 40px; background: linear-gradient(90deg, #00e6ff, #a64dff); color: white; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 0 20px #00e6ff, 0 0 40px #a64dff; transition: transform 0.3s, box-shadow 0.3s; }
+.glow-button:hover { transform: scale(1.1); box-shadow: 0 0 40px #00ffff, 0 0 60px #a64dff; }
+
+/* ==== Wonders Page ==== */
+.wonders { text-align: center; padding: 80px 20px 120px; }
+.wonders h2 { font-size: 2.3rem; color: #00e6ff; text-shadow: 0 0 15px #00ffff, 0 0 25px #a64dff; margin-bottom: 10px; }
+.intro { color: #ccc; font-size: 1.1rem; margin-bottom: 50px; max-width: 600px; margin-left:auto; margin-right:auto; line-height:1.6; }
+.wonder-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; justify-items: center; padding: 0 40px; }
+.wonder-card { display:flex; flex-direction:column; align-items:center; text-decoration:none; color:inherit; background: rgba(255,255,255,0.05); border-radius:20px; padding:30px 20px; width:260px; text-align:center; box-shadow:0 0 15px rgba(0,255,255,0.2); backdrop-filter: blur(10px); transition: transform 0.3s, box-shadow 0.3s; }
+.wonder-card:hover { transform: translateY(-10px); box-shadow: 0 0 25px #00ffff,0 0 60px #a64dff; }
+.wonder-card .circle { width:100px; height:100px; margin-bottom:10px; border-radius:50%; background: radial-gradient(circle,#00ffff55,#000); border:2px solid #00ffff; box-shadow:0 0 20px #00e6ff; display:flex; align-items:center; justify-content:center; font-size:2rem; transition: transform 0.3s, box-shadow 0.3s; }
+.wonder-card:hover .circle { transform:scale(1.15); box-shadow: 0 0 30px #00ffff, 0 0 60px #a64dff; }
+
+/* ==== Footer ==== */
+footer { text-align:center; padding:30px; font-size:0.9rem; color:#888; border-top:1px solid rgba(255,255,255,0.1); margin-top:60px; }
+/* ==== Science Dome Page ==== */
+.science-page {background: linear-gradient(180deg, #000015, #010822, #000);
+  color: white;
+  min-height: 100vh;}
+
+.science-hero { text-align: center;
+  padding: 100px 20px 50px;}
+
+.science-hero h2 { font-size: 2.5rem;
+  color: #00e6ff;
+  text-shadow: 0 0 20px #00ffff, 0 0 40px #a64dff;}
+
+.science-hero p {max-width: 650px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.7;}
+
+.science-grid {display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px 80px;
+  justify-items: center;}
+
+.science-card {background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;}
+
+.science-card:hover {transform: translateY(-10px);
+  box-shadow: 0 0 25px #00ffff, 0 0 60px #a64dff;}
+
+.science-card h3 {color: #00e6ff;
+  margin-bottom: 10px;}
+
+.science-card p {color: #bbb;
+  font-size: 0.95rem;
+  line-height: 1.6;}
+
+.back-btn {text-align: center;
+  margin: 40px 0;}
+

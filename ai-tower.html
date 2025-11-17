@@ -1,0 +1,156 @@
+<!-- ai-tower.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tower | World of Wonders</title>
+
+  <style>
+    :root {--bg1: #050014;
+      --bg2: #000010;
+      --accent1: #00eaff;
+      --accent2: #a64dff;
+      --glass: rgba(255,255,255,0.06);
+      --radius: 20px; }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { background: radial-gradient(circle at 25% 25%, var(--bg1), var(--bg2) 85%);
+      font-family: "Poppins", sans-serif;
+      color: white;
+      overflow-x: hidden;
+      min-height: 100vh;}
+
+    header {text-align: center;
+      padding: 70px 20px 30px;}
+
+    header h1 { font-size: 2.8rem;
+      color: var(--accent1);
+      text-shadow: 0 0 30px rgba(0,230,255,0.3); }
+
+    header p {color: #bbb;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 10px auto 0;}
+
+    main {display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 60px 20px 120px;}
+
+    /* ===== Card Design ===== */
+    .card { position: relative;
+      width: 340px;
+      height: 460px;
+      background: var(--glass);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      transition: all 0.4s ease;
+      backdrop-filter: blur(10px);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;}
+
+    .card:hover { transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 40px rgba(0,230,255,0.25),
+                  0 0 60px rgba(166,77,255,0.15);}
+
+    .card img { width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid rgba(255,255,255,0.08);}
+
+    .card-content {flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;}
+
+    .card h2 {font-size: 1.4rem;
+      color: var(--accent1);
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px rgba(0,230,255,0.15);}
+
+    .card p {color: #ddd;
+      font-size: 1rem;
+      flex-grow: 1;
+      line-height: 1.4;}
+
+    .glow-btn { margin-top: 20px;
+      align-self: center;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 28px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 0 25px rgba(0,230,255,0.2);
+      transition: all 0.3s ease;}
+
+    .glow-btn:hover { box-shadow: 0 0 40px rgba(0,230,255,0.35);
+      transform: scale(1.05);}
+ .glow-button { display: block; width: fit-content;
+      margin: 20px auto 60px;
+      padding: 14px 34px;
+      color: #fff;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #00eaff, #a64dff);
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 25px #00ffff;
+      transition: 0.3s; }
+
+    .glow-button:hover {transform: scale(1.05);
+      box-shadow: 0 0 45px #00ffff, 0 0 80px #a64dff;}
+
+    footer {text-align: center;}
+
+    footer { text-align: center;
+      color: #999;
+      padding: 40px 10px 80px;
+      font-size: 0.9rem;}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>AI Tower</h1>
+    <p>Step into the world where Artificial Intelligence learns, thinks, and even creates — blending logic and imagination.</p>
+  </header>
+
+  <main>
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" alt="Thinking Machines">
+      <div class="card-content">
+        <h2>🧠 How Machines Think & Learn</h2>
+        <p>Discover how AI systems process data, form decisions, and adapt through deep learning, neural networks, and reinforcement models that mimic human learning patterns.</p>
+        <a href="think.html" class="glow-btn">Explore</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.d_zurTP0omiBlQb2bJA2-gHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Creative AI">
+      <div class="card-content">
+        <h2>🎨 How Machines Create Like Humans</h2>
+        <p>See how creative AI crafts art, composes music, and writes stories — using algorithms that imitate imagination and human-style innovation.</p>
+        <a href="create.html" class="glow-btn">Explore</a>
+      </div>
+    </div>
+  </main>
+ <a href="wonders.html" class="glow-button">← Back to Wonders</a>
+  <footer>
+    © 2025 World of Wonders | AI Tower
+  </footer>
+</body>
+</html>

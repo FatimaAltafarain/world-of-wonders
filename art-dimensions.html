@@ -5,8 +5,117 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Art & Dimensions | World of Wonders</title>
+    <link rel="icon" href="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg">
 
 <style>
+     header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+  .glow-nav {width: 100%;
+  padding: 10px 15px;
+  height: 80px;;
+display:flex ;
+position: relative;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;}
+
+/* Cards basic style */
+.nav-card {padding: 12px 25px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+    perspective: 800px; 
+    transform-style: preserve-3d;}
+
+/* 3D hover + neon glow */
+.nav-card:hover {transform: rotateX(12deg) rotateY(-12deg) scale(1.05);box-shadow: 
+    0 0 25px #ff00ff;;  }
+
+/* Extra soft neon border on hover */
+.nav-card::before { content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #b413a756, #a5610894);
+    opacity: 0;transition: 0.3s ease;}
+
+.nav-card:hover::before { opacity: 1;
+    filter: blur(12px);}
+.glow-navbar {display: flex;
+    gap: 20px;
+    padding: 18px 25px;}
+
+/* Nav links as cards */
+.nav-card { display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    box-shadow:0 0 25px #ff00ff;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform-style: preserve-3d;}
+
+/* Icon inside nav card */
+.nav-card i { font-size: 18px;
+    transition: 0.35s ease;}
+
+/* Hover → forward 3D pop-out + glow */
+.nav-card:hover {transform: translateZ(20px) scale(1.05);
+    box-shadow:
+   0 0 25px #ff00ff;}
+
+/* Icon glow on hover */
+.nav-card:hover i { text-shadow: 0 0 45px #ad1fa6, 0 0 80px #d37b16;}
+
+/* LOGO in card style */
+.logo-card {display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #111;
+    padding: 12px 22px;
+    border-radius: 16px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.35s ease;
+    position: relative;
+    box-shadow: 0 0 25px #ff00ff;
+    transform-style: preserve-3d;}
+
+/* Icon inside card */
+.logo-card i {font-size: 24px;
+    transition: 0.35s ease;}
+
+/* Hover: 3D + Glow + Lift */
+.logo-card:hover {transform: translateY(-4px) rotateX(10deg) rotateY(-10deg) scale(1.06);
+    box-shadow: 
+   0 0 45px #ad1fa6, 0 0 80px #d37b16;}
+
+/* Icon glow */
+.logo-card:hover i {text-shadow: 0 0 45px #ad1fa6, 0 0 80px #d37b16;}
+
+/* Outer glow background */
+.logo-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #b413a736, #a561082f);
+    opacity: 0;
+    transition: 0.35s ease;}
+
+.logo-card:hover::before { opacity: 1;
+    filter: blur(15px);}
 :root { --bg1: #050014;
   --bg2: #000010;
   --accent1: #ff6a00;
@@ -22,17 +131,15 @@ body { font-family:'Poppins',sans-serif;
   min-height:100vh;
   overflow-x:hidden;}
 
-header { text-align:center;
-  padding:60px 20px 20px;}
-
-header h1 { font-size:2.5rem;
+ h1 { font-size:2.5rem;
   color: var(--accent1);
-  text-shadow:0 0 30px rgba(255,106,0,0.3);}
-
-header p { font-size:1.1rem;
+  text-shadow:0 0 30px rgba(255,106,0,0.3);
+text-align: center;}
+ p { font-size:1.1rem;
   max-width:800px;
   margin:10px auto;
-  color:#bbb;}
+  color:#bbb;
+text-align: center;}
 
 section { max-width:1000px;
   margin:60px auto;
@@ -103,12 +210,19 @@ footer { text-align:center;
 </style>
 </head>
 <body>
+  <header>
+    <div class="logo-card"> <img src="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg" height="100" width="100" class="glow-logo"  alt="logo"></div>
+    <nav>
+   <nav class="glow-navbar">
+    <a href="index.html" class="nav-card"><i class="fas fa-home"></i> Home</a>
+    <a href="Wonders.html" class="nav-card"><i class="fas fa-user"></i> wonder</a>
+    <a href="art-dimensions.html" class="nav-card"><i class="fas fa-briefcase" class="active"></i> Art & dimension</a>
+   
+</nav>
+  </header>
 
-<header>
-  <h1>Art & Dimensions</h1>
+ <h1>Art & Dimensions</h1>
   <p>Dive into the world of creativity where digital artistry and AI-powered innovations shape modern art and imagination.</p>
-</header>
-
 <!-- Section 1: Digital Artistry -->
 <section>
   <h2>🎨 Digital Artistry</h2>

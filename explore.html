@@ -4,10 +4,123 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Explore More | World of Wonders</title>
+    <link rel="icon" href="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+   header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+  .glow-nav {width: 100%;
+  padding: 10px 15px;
+  height: 80px;;
+display:flex ;
+position: relative;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;}
 
+/* Cards basic style */
+.nav-card {padding: 12px 25px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+    perspective: 800px; 
+    transform-style: preserve-3d;}
+
+/* 3D hover + neon glow */
+.nav-card:hover {transform: rotateX(12deg) rotateY(-12deg) scale(1.05);box-shadow: 
+    0 0 25px #00ffff,0 0 60px #a64dff;  }
+
+/* Extra soft neon border on hover */
+.nav-card::before { content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: linear-gradient(45deg, #00ffffc5, #ff73fa8c, #00ffa2cb);
+    opacity: 0;transition: 0.3s ease;}
+
+.nav-card:hover::before { opacity: 1;
+    filter: blur(12px);}
+.glow-navbar {display: flex;
+    gap: 20px;
+    padding: 18px 25px;}
+
+/* Nav links as cards */
+.nav-card { display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 6px #29c7c7;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform-style: preserve-3d;}
+
+/* Icon inside nav card */
+.nav-card i { font-size: 18px;
+    transition: 0.35s ease;}
+
+/* Hover → forward 3D pop-out + glow */
+.nav-card:hover {transform: translateZ(20px) scale(1.05);
+    box-shadow:
+        0 10px 20px rgba(0, 255, 255, 0.3),
+        0 20px 40px rgba(0, 255, 255, 0.4);
+    color: #00f5ff;}
+
+/* Icon glow on hover */
+.nav-card:hover i { text-shadow: 0 0 10px #00f5ff, 0 0 20px #00f5ff;}
+
+/* LOGO in card style */
+.logo-card {display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #111;
+    padding: 12px 22px;
+    border-radius: 16px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.35s ease;
+    position: relative;
+    box-shadow:0 0 12px #00f5ff;
+    transform-style: preserve-3d;}
+
+/* Icon inside card */
+.logo-card i {font-size: 24px;
+    transition: 0.35s ease;}
+
+/* Hover: 3D + Glow + Lift */
+.logo-card:hover {transform: translateY(-4px) rotateX(10deg) rotateY(-10deg) scale(1.06);
+    box-shadow: 
+        0 0 12px #00f5ff,
+        0 0 25px #ff73fa,
+        0 0 45px #00ffa3;
+    color: #f3f3f3;}
+
+/* Icon glow */
+.logo-card:hover i {text-shadow: 0 0 10px #00f5ff, 0 0 22px #00f5ff;}
+
+/* Outer glow background */
+.logo-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #00ffff5e, #ff73fa63, #00ffa26c);
+    opacity: 0;
+    transition: 0.35s ease;}
+
+.logo-card:hover::before { opacity: 1;
+    filter: blur(15px);}
 :root {--main-bg: radial-gradient(circle at 20% 20%, #0b0020, #000 80%);
   --accent1: #7afcff;
   --accent2: #ff73fa;
@@ -21,22 +134,23 @@ body { font-family: 'Poppins', sans-serif;
   color: var(--text-light);
   overflow-x: hidden;}
 
-header {text-align: center;
-  padding: 100px 20px 60px;}
 
-header h1 { font-size: 3rem;
+
+ h1 { font-size: 3rem;
   background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
   -webkitbackground-clip: text;
   -webkit-text-fill-color:black;
-  animation: glow 6s infinite alternate;}
+  animation: glow 6s infinite alternate;
+text-align: center;}
 
 @keyframes glow { 0% { text-shadow: 0 0 10px var(--accent1), 0 0 20px var(--accent2); }
   100% { text-shadow: 0 0 30px var(--accent3), 0 0 60px var(--accent2); }}
 
-header p {font-size: 1.2rem;
+ p {font-size: 1.2rem;
   color: #d6d6d6;
   max-width: 800px;
-  margin: 20px auto 0;}
+  margin: 20px auto 0;
+text-align: center;}
 
 section {max-width: 1100px;
   margin: 60px auto;
@@ -82,12 +196,21 @@ footer { text-align: center;
 </style>
 </head>
 <body>
+  <header>
+    <div class="logo-card"> <img src="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg" height="100" width="100" class="glow-logo"  alt="logo"></div>
+    <nav>
+   <nav class="glow-navbar">
+    <a href="index.html" class="nav-card"><i class="fas fa-home"></i> Home</a>
+    <a href="Wonders.html" class="nav-card"><i class="fas fa-user" ></i> wonder</a>
+    <a href="explore.html" class="nav-card"><i class="fas fa-briefcase"class="active"></i> Explore more</a>
+    
+</nav>
+  </header>
 
-<header>
   <h1>✨ Explore More ✨</h1>
-  <p>Step beyond the limits of imagination — discover endless worlds of wonder, creativity, and knowledge.  
+  <p>Step beyond the limits of imagination, discover endless worlds of wonder, creativity, and knowledge.  
      Every journey begins with curiosity. Let’s see where it takes you.</p>
-</header>
+
 
 <section>
 
@@ -96,7 +219,7 @@ footer { text-align: center;
     <div class="image-box">
       <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80" alt="Cosmic Galaxy">
     </div>
-    <p>The universe stretches far beyond what eyes can see — billions of galaxies, uncharted worlds, and mysteries waiting to be uncovered.  
+    <p>The universe stretches far beyond what eyes can see, billions of galaxies, uncharted worlds, and mysteries waiting to be uncovered.  
     Humanity’s next chapter begins when we dare to look further. Through space exploration, we learn that the sky was never the limit — it was just the beginning.</p>
   </div>
 
@@ -106,7 +229,7 @@ footer { text-align: center;
       <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Books and light">
     </div>
     <p>Knowledge glows brightest in the dark. From ancient scrolls to modern AI, human curiosity has built a universe of ideas.  
-    Dive into art, science, technology, and nature — every field hides wonders waiting to be explored.  
+    Dive into art, science, technology, and nature, every field hides wonders waiting to be explored.  
     The more we learn, the more beauty we find in how everything connects.</p>
   </div>
 
@@ -117,7 +240,7 @@ footer { text-align: center;
     </div>
     <p>Exploration isn’t just about traveling far, it’s about seeing the world with new eyes.  
     Each mountain, ocean, and sky holds lessons in patience, courage, and discovery.  
-    When you explore more, you find more than places — you find yourself.</p>
+    When you explore more, you find more than places, you find yourself.</p>
   </div>
 
   <div class="card">
@@ -135,7 +258,7 @@ footer { text-align: center;
     <div class="image-box">
       <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&q=80" alt="Dreamy sky">
     </div>
-    <p>The world of wonders never ends — it evolves with every dreamer who dares to explore.  
+    <p>The world of wonders never ends, it evolves with every dreamer who dares to explore.  
     Keep looking, keep questioning, and keep creating.  
     Because the greatest adventure of all is understanding the universe and our place in it.</p>
   </div>

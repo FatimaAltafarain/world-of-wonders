@@ -4,9 +4,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Strategy Challenge | World of Wonders</title>
-
+    <link rel="icon" href="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+  header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+  .glow-nav {width: 100%;
+  padding: 10px 15px;
+  height: 80px;;
+display:flex ;
+position: relative;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;}
+
+/* Cards basic style */
+.nav-card {padding: 12px 25px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+    perspective: 800px; 
+    transform-style: preserve-3d;}
+
+/* 3D hover + neon glow */
+.nav-card:hover {transform: rotateX(12deg) rotateY(-12deg) scale(1.05);box-shadow: 
+    0 0 25px #00ffff,0 0 60px #a64dff;  }
+
+/* Extra soft neon border on hover */
+.nav-card::before { content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: linear-gradient(45deg, #00ffffe0, #ff73fade, #00ffa2fa);
+    opacity: 0;transition: 0.3s ease;}
+
+.nav-card:hover::before { opacity: 1;
+    filter: blur(12px);}
+.glow-navbar {display: flex;
+    gap: 20px;
+    padding: 18px 25px;}
+
+/* Nav links as cards */
+.nav-card { display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 6px #29c7c7;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform-style: preserve-3d;}
+
+/* Icon inside nav card */
+.nav-card i { font-size: 18px;
+    transition: 0.35s ease;}
+
+/* Hover → forward 3D pop-out + glow */
+.nav-card:hover {transform: translateZ(20px) scale(1.05);
+    box-shadow:
+        0 10px 20px rgba(0, 255, 255, 0.3),
+        0 20px 40px rgba(0, 255, 255, 0.4);
+    color: #00f5ff;}
+
+/* Icon glow on hover */
+.nav-card:hover i { text-shadow: 0 0 10px #00f5ff, 0 0 20px #00f5ff;}
+
+/* LOGO in card style */
+.logo-card {display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #111;
+    padding: 12px 22px;
+    border-radius: 16px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.35s ease;
+    position: relative;
+    box-shadow:0 0 12px #00f5ff;
+    transform-style: preserve-3d;}
+
+/* Icon inside card */
+.logo-card i {font-size: 24px;
+    transition: 0.35s ease;}
+
+/* Hover: 3D + Glow + Lift */
+.logo-card:hover {transform: translateY(-4px) rotateX(10deg) rotateY(-10deg) scale(1.06);
+    box-shadow: 
+        0 0 12px #00f5ff,
+        0 0 25px #ff73fa,
+        0 0 45px #00ffa3;
+    color: #f3f3f3;}
+
+/* Icon glow */
+.logo-card:hover i {text-shadow: 0 0 10px #00f5ff, 0 0 22px #00f5ff;}
+
+/* Outer glow background */
+.logo-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #00ffff5e, #ff73fa63, #00ffa26c);
+    opacity: 0;
+    transition: 0.35s ease;}
+
+.logo-card:hover::before { opacity: 1;
+    filter: blur(15px);}
 
 :root { --bg: radial-gradient(circle at 20% 20%, #00040a, #000000 90%);
   --accent1: #00ffe0;
@@ -21,23 +134,23 @@ body {font-family:'Poppins',sans-serif;
   overflow-x:hidden;
   line-height:1.6;}
 
-header { text-align:center;
-  padding:100px 20px 60px;}
 
-header h1 { font-size:3rem;
+
+ h1 { font-size:3rem;
   background: linear-gradient(90deg, var(--accent1), var(--accent2));
   -webkit-backgroundclip: text;
-  -webkit-text-fill-color: transparent;
   text-shadow:0 0 20px rgba(0,255,224,0.5);
-  animation: glow 6s infinite alternate;}
+  animation: glow 6s infinite alternate;
+text-align: center;}
 
 @keyframes glow { 0% { text-shadow: 0 0 10px var(--accent1), 0 0 20px var(--accent2);}
   100% { text-shadow: 0 0 30px var(--accent1), 0 0 60px var(--accent2);}}
 
-header p { font-size:1.2rem;
+ p { font-size:1.2rem;
   max-width:800px;
   margin:20px auto 0;
-  color:#d8d8d8;}
+  color:#d8d8d8;
+text-align: center;}
 
 .section { max-width:1100px;
   margin:60px auto;
@@ -110,11 +223,22 @@ footer {text-align:center;
 </head>
 <body>
 
-<header>
+ <header>
+ <div class="logo-card"> <img src="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg" height="100" width="100" class="glow-logo"  alt="logo"></div>
+    <nav>
+      <nav class="glow-navbar">
+      <a href="index.html"class="nav-card"><i class="fas fa-home"> </i>Home</a>
+      <a href="wonders.html"class="nav-card"><i class="fas fa-home"></i>Wonders</a>
+      <a href="game-arena.html"class="nav-card"><i class="fas fa-home"></i>Game arena</a>
+      <a href="creative-games.html"class="nav-card"><i class="fas fa-home"></i>Creative games</a>
+      <a href="strategy challenge.html" class="nav-card"><i class="fas fa-home"></i>strategy challenge</a>
+    </nav>
+  </header>
+
   <h1>Strategy Challenges</h1>
   <p>Sharpen your mind with the most interesting, creative, and challenging strategy games.  
   Click the "Show Tip" button on each card to reveal secret strategies!</p>
-</header>
+
 
 <div class="section">
   <div class="cards">

@@ -4,8 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Beautiful Green World | World of Wonders</title>
-
+    <link rel="icon" href="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg">
 <style>
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+  .glow-nav {width: 100%;
+  padding: 10px 15px;
+  height: 80px;;
+display:flex ;
+position: relative;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;}
+
+/* Cards basic style */
+.nav-card {padding: 12px 25px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+    perspective: 800px; 
+    transform-style: preserve-3d;}
+
+/* 3D hover + neon glow */
+.nav-card:hover {transform: rotateX(12deg) rotateY(-12deg) scale(1.05);box-shadow: 
+    0 0 25px #00c86f,0 0 60px #002a15;  }
+
+/* Extra soft neon border on hover */
+.nav-card::before { content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: linear-gradient(45deg, #00c86e38, #002a155e);
+    opacity: 0;transition: 0.3s ease;}
+
+.nav-card:hover::before { opacity: 1;
+    filter: blur(12px);}
+.glow-navbar {display: flex;
+    gap: 20px;
+    padding: 18px 25px;}
+
+/* Nav links as cards */
+.nav-card { display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 6px #00c86f;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform-style: preserve-3d;}
+
+/* Icon inside nav card */
+.nav-card i { font-size: 18px;
+    transition: 0.35s ease;}
+
+/* Hover → forward 3D pop-out + glow */
+.nav-card:hover {transform: translateZ(20px) scale(1.05);
+    box-shadow:
+  0 0 40px rgba(0,255,179,0.25)}
+
+/* Icon glow on hover */
+.nav-card:hover i { text-shadow: 0 0 10px #00c86f, 0 0 20px #002a15;}
+
+/* LOGO in card style */
+.logo-card {display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #111;
+    padding: 12px 22px;
+    border-radius: 16px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.35s ease;
+    position: relative;
+    box-shadow: 0 0 8px #00c86f;
+    transform-style: preserve-3d;}
+
+/* Icon inside card */
+.logo-card i {font-size: 24px;
+    transition: 0.35s ease;}
+
+/* Hover: 3D + Glow + Lift */
+.logo-card:hover {transform: translateY(-4px) rotateX(10deg) rotateY(-10deg) scale(1.06);
+    box-shadow: 
+0 0 40px rgba(0,255,179,0.25);}
+
+/* Icon glow */
+.logo-card:hover i {text-shadow: 0 0 10px #00f5ff, 0 0 22px #00f5ff;}
+
+/* Outer glow background */
+.logo-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #002a1546, #00c86e62);
+    opacity: 0;
+    transition: 0.35s ease;}
+
+.logo-card:hover::before { opacity: 1;
+    filter: blur(15px);}
 :root {--green1: #00ffb3;
   --green2: #00c86f;
   --dark-bg: #001109;
@@ -19,17 +127,17 @@ body {font-family:'Poppins',sans-serif;
   overflow-x:hidden;
   line-height:1.6;}
 
-header { text-align:center;
-  padding:80px 20px 40px;}
 
-header h1 {font-size:2.6rem;
+ h1 {font-size:2.6rem;
   color:var(--green1);
-  text-shadow:0 0 25px rgba(0,255,179,0.4);}
+  text-shadow:0 0 25px rgba(0,255,179,0.4);
+text-align: center;}
 
-header p { font-size:1.1rem;
+ p { font-size:1.1rem;
   max-width:800px;
   margin:10px auto;
-  color:#b8f2d0;}
+  color:#b8f2d0;
+text-align: center;}
 
 .section { max-width:1000px;
   margin:60px auto;
@@ -81,11 +189,19 @@ footer { text-align:center;
 </style>
 </head>
 <body>
-
-<header>
+  <header>
+    <div class="logo-card"> <img src="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg" height="100" width="100" class="glow-logo"  alt="logo"></div>
+    <nav>
+   <nav class="glow-navbar">
+    <a href="index.html" class="nav-card"><i class="fas fa-home"></i> Home</a>
+    <a href="Wonders.html" class="nav-card"><i class="fas fa-user" class="active"></i> wonder</a>
+    <a href="green.html" class="nav-card"><i class="fas fa-briefcase"></i> Green world</a>
+    <a href="greenbeauty.html" class="nav-card"><i class="fas fa-envelope"></i> Discover nature</a>
+</nav>
+  </header>
   <h1>🌿 The Beautiful Green World</h1>
   <p>Explore the harmony between technology, innovation, and the timeless beauty of nature, where sustainability meets creativity.</p>
-</header>
+
 
 <div class="section">
 

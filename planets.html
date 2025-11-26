@@ -4,15 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exploring Planets | Space Exploration</title>
+      <link rel="icon" href="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg">
   <link rel="stylesheet" href="style.css">
   <style>
+       header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+  .glow-nav {width: 100%;
+  padding: 10px 15px;
+  height: 80px;;
+display:flex ;
+position: relative;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;}
+
+/* Cards basic style */
+.nav-card {padding: 12px 25px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+    perspective: 800px; 
+    transform-style: preserve-3d;}
+
+/* 3D hover + neon glow */
+.nav-card:hover {transform: rotateX(12deg) rotateY(-12deg) scale(1.05);box-shadow: 
+    0 0 25px #00ffff,0 0 60px #a64dff;  }
+
+/* Extra soft neon border on hover */
+.nav-card::before { content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: linear-gradient(45deg, #00ffff, #00ffff);
+    opacity: 0;transition: 0.3s ease;}
+
+.nav-card:hover::before { opacity: 1;
+    filter: blur(12px);}
+.glow-navbar {display: flex;
+    gap: 20px;
+    padding: 18px 25px;}
+
+/* Nav links as cards */
+.nav-card { display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 6px #29c7c7;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform-style: preserve-3d;}
+
+/* Icon inside nav card */
+.nav-card i { font-size: 18px;
+    transition: 0.35s ease;}
+
+/* Hover → forward 3D pop-out + glow */
+.nav-card:hover {transform: translateZ(20px) scale(1.05);
+    box-shadow:
+        0 10px 20px rgba(0, 255, 255, 0.3),
+        0 20px 40px rgba(0, 255, 255, 0.4);
+    color: #00f5ff;}
+
+/* Icon glow on hover */
+.nav-card:hover i { text-shadow: 0 0 10px #00f5ff, 0 0 20px #00f5ff;}
+
+/* LOGO in card style */
+.logo-card {display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #111;
+    padding: 12px 22px;
+    border-radius: 16px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.35s ease;
+    position: relative;
+    box-shadow: 0 0 8px #00eeff33;
+    transform-style: preserve-3d;}
+
+/* Icon inside card */
+.logo-card i {font-size: 24px;
+    transition: 0.35s ease;}
+
+/* Hover: 3D + Glow + Lift */
+.logo-card:hover {transform: translateY(-4px) rotateX(10deg) rotateY(-10deg) scale(1.06);
+    box-shadow: 
+        0 0 12px #00f5ff,
+        0 0 25px #00f5ff,
+        0 0 45px #00f5ff;
+    color: #00f5ff;}
+
+/* Icon glow */
+.logo-card:hover i {text-shadow: 0 0 10px #00f5ff, 0 0 22px #00f5ff;}
+
+/* Outer glow background */
+.logo-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #00eaff44, #00f5ff44);
+    opacity: 0;
+    transition: 0.35s ease;}
+
+.logo-card:hover::before { opacity: 1;
+    filter: blur(15px);}
     body {background: radial-gradient(circle at center, #010012, #02001a, #060021);
       color: white;
       font-family: 'Poppins', sans-serif;
       text-align: center;
       overflow-x: hidden;}
 
-    header {padding: 20px;}
+
 
     h1.logo {color: #00ffff;
       text-shadow: 0 0 25px #00ffff;
@@ -97,13 +211,14 @@
 <body>
 
   <header>
-    <h1 class="logo">🌍 World of Wonders</h1>
+<div class="logo-card"> <img src="WhatsApp Image 2025-11-19 at 2.39.26 AM.jpeg" height="100" width="100" class="glow-logo"  alt="logo"></div>
      <nav>
-      <a href="index.html">Home</a>
-      <a href="wonders.html">Wonders</a>
-      <a href="science.html">Science Dome</a>
-      <a href="space.html">Space Exploration</a>
-      <a href="planets.html" class="active">Exploring planet</a>
+      <nav class="glow-navbar">
+      <a href="index.html"class="nav-card"><i class="fas fa-home"></i>Home</a>
+      <a href="wonders.html"class="nav-card"><i class="fas fa-home"></i>Wonders</a>
+      <a href="science.html"class="nav-card"><i class="fas fa-home"></i>Science Dome</a>
+      <a href="space.html"class="nav-card"><i class="fas fa-home"></i>Space Exploration</a>
+      <a href="planets.html"class="nav-card"><i class="fas fa-home"></i>Exploring planet</a>
     </nav>
   </header>
 
@@ -116,56 +231,56 @@
   <section class="fact-section">
 
     <div class="fact-box">
-      <h3>☀ Mercury — The Swift Planet</h3>
+      <h3>☀ Mercury "The Swift Planet"</h3>
       <p>Mercury races around the Sun in just 88 days. With no real atmosphere to protect it, 
       temperatures swing from 430°C in the day to -180°C at night , a planet of extremes!</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" class="planet-img">
     </div>
 
     <div class="fact-box">
-      <h3>🔥 Venus — The Fiery World</h3>
+      <h3>🔥 Venus "The Fiery World"</h3>
       <p>Venus is wrapped in thick clouds of acid and has surface temperatures hot enough to melt lead. 
       It rotates backward, making its sunrise appear in the west and sunset in the east.</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" class="planet-img">
     </div>
 
     <div class="fact-box">
-      <h3>🌍 Earth — The Living Planet</h3>
+      <h3>🌍 Earth "The Living Planet"</h3>
       <p>Our home, Earth, is a water-rich paradise where life thrives in every corner,
       from deep oceans to high mountains. Its perfect distance from the Sun makes it a rare gem in space.</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" class="planet-img">
     </div>
 
     <div class="fact-box">
-      <h3>🔴 Mars — The Red Frontier</h3>
+      <h3>🔴 Mars "The Red Frontier"</h3>
       <p>Covered in red dust, Mars has giant volcanoes and deep valleys. 
       Scientists believe it once had rivers — and maybe even life. It’s our best hope for future colonization.</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" class="planet-img">
     </div>
 
     <div class="fact-box">
-      <h3>🪐 Jupiter — The Giant of Storms</h3>
+      <h3>🪐 Jupiter "The Giant of Storms"</h3>
       <p>Jupiter is so big it could fit 1,300 Earths inside it. 
       Its Great Red Spot is a storm that’s been raging for centuries, larger than our entire planet!</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" class="planet-img">
     </div>
 
     <div class="fact-box">
-      <h3>💍 Saturn — The Ringed Wonder</h3>
+      <h3>💍 Saturn "The Ringed Wonder"</h3>
       <p>Famous for its dazzling rings made of ice and rock, Saturn is a breathtaking sight through a telescope,
       a gas giant that floats on water if there were a big enough ocean!</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" class="planet-img">
     </div>
 
     <div class="fact-box">
-      <h3>🌀 Uranus — The Sideways Planet</h3>
+      <h3>🌀 Uranus "The Sideways Planet"</h3>
       <p>Uranus spins on its side, making its seasons last over 20 Earth years. 
       Its pale blue glow comes from methane gas reflecting sunlight.</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" class="planet-img">
     </div>
 
     <div class="fact-box">
-      <h3>💙 Neptune — The Windy World</h3>
+      <h3>💙 Neptune "The Windy World"</h3>
       <p>Neptune is an icy blue giant with supersonic winds faster than 2,000 km/h ,
       the fastest in the Solar System. It’s the farthest known planet from the Sun.</p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" class="planet-img">
